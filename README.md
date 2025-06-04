@@ -76,3 +76,9 @@ public final class Product {
 # Switch Expressions and Text Blocks
 - Switch Expressions
   - allows for returning a value from a switch — safer and more concise.
+  - No need for break
+[./src/main/java/org/example/Main.java](./src/main/java/org/example/Main.java)
+
+- Text Blocks
+  - Automatically handles indentation and new lines. 
+  - Useful for HTML, JSON, multi-line strings.
