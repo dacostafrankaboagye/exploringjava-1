@@ -53,4 +53,26 @@ public final class Product {
 ```
 
 - output
-![./images/recordoutput.png](./images/recordoutput.png)
+![./images/recordoutput.png](images/recordoutput.png)
+
+# Sealed Classes
+- Enforce strict control over class hierarchies. 
+- Help you define what is allowed to extend a class.
+
+### Sealing the Product Hierarchy
+- the sealed base class
+[](./src/main/java/org/example/SealedProduct.java)
+
+- permitted subclasses
+[./src/main/java/org/example/ElectronicsProduct.java](./src/main/java/org/example/ElectronicsProduct.java)
+[./src/main/java/org/example/SealedProduct.java](./src/main/java/org/example/SealedProduct.java)
+
+- so what is happening here? 
+  - Only ElectronicsProduct and ClothingProduct are allowed because of the permits clause.
+- so something like a FoodProduct would not work
+![](./images/foodproduct.png)
+
+
+# Switch Expressions and Text Blocks
+- Switch Expressions
+  - allows for returning a value from a switch — safer and more concise.
